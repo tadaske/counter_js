@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+<!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+ 
+<!-- 本番バージョン、サイズと速度のために最適化されています
+<script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+<style >
+	button{
+		border: 1px solid black;
+		padding:10px;
+	}
+	
+</style>
+
+</head>
+<body>
+	<div class="app">
+		<span v-if="seen">{{ message }}</span>
+	</div>	
+
+	<div id="app-4">
+		<ol>
+			<li v-for="a in datas">
+				{{ a.text }}
+			</li>
+		</ol>
+	</div>
+	
+	<span id="app5">{{ a }}</span>
+	
+	
+	
+	<div id="components-demo">
+		<button-counter></button-counter>
+	</div>
+
+	
+	<script src="js/index.js"></script>
+</body>
+</html>

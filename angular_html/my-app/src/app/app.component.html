@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+<h1>{{ title }}</h1>
+
+<div><span>{{clickMessage}}</span>&nbsp;</div>
+<button (click)="onClickMe()">draw・elase</button>
+
+<div>
+	<input #box (keyup.enter)="onEnter(box.value)" (blur)="update(box.value)">
+	<p>{{values}}</p>
+</div>
+
+</div>
+
